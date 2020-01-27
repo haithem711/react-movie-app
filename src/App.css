@@ -1,0 +1,66 @@
+.block{display: flex;width: 80%;margin: auto;
+
+align-items: center;}
+.namefilter{ height: 100px;
+  display: flex;
+ 
+  justify-content: space-around;
+  padding: 0 10px;
+}
+.text{
+  border: 2px solid black;width: 250px;height: 20px;}
+.button{border: 2px solid black;
+  border-left: none;
+  background-color: transparent;
+  padding: 0 10px;
+width: 100px;height: 26px;}
+  .rating {width: 20%; 
+  display: flex;
+  list-style: none;
+  }
+  .movie-app-main {
+    margin-top: 20px;
+  }
+  .movie-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .movie-card,
+  .new-card {
+    border: 2px solid black;
+    width: 200px;
+    height: 280px;
+    position: relative;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .movie-rating {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px 10px;
+    border: 2px solid black;
+    border-top: none;
+    border-right: none;
+  }
+  .image{
+    height : 220px !important
+    
+  }
+  .titre {
+    border-top: 2px solid black;
+    text-align: center;
+    padding: 10px;height: 30px;
+  }
+  .new-card {
+    font-size: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .movie{width: 80%;
+  margin: auto;}
+  .rate{display: flex;justify-content: space-around;}
+  .app{width: 80%;
+  margin: auto;}
