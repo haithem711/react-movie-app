@@ -5,6 +5,7 @@ import Rating from './Rating';
 import Movielist from './Movielist';
 
 
+
 let movies=[{
   rating:3,
   image:'https://images-na.ssl-images-amazon.com/images/I/51NbVEuw1HL._SX355_.jpg',
@@ -21,7 +22,8 @@ class App extends Component{
   state={
     movies : movies, 
     rating : 1,
-    keyword : ""
+    keyword : "",
+    isloading:true
   }
   getRating = (indexOfStarClicked) => {
     this.setState({
@@ -48,7 +50,7 @@ class App extends Component{
       <Rating rating = {(indexOfStarClicked)=> this.getRating(indexOfStarClicked)} rate={this.state.rating}/></div>
       </div>
      
-     <Movielist movies= {this.state.movies.filter(el =>el.titre.toLowerCase().includes(this.state.keyword.trim().toLowerCase())&& el.rating>=this.state.rating   )} add={(newmovie)=>this.add(newmovie)}/>
+     <Movielist  isloading={this.state.isloading} movies= {this.state.movies.filter(el =>el.titre.toLowerCase().includes(this.state.keyword.trim().toLowerCase())&& el.rating>=this.state.rating   )} add={(newmovie)=>this.add(newmovie)}/>
      
     </div>
   );
